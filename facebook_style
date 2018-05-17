@@ -1,0 +1,32 @@
+#pagelet_bookmark_nav, /* Left column: Bookmarks */
+a[href*="lists"], /* Left column: Lists like 'Close Friends' */
+div[id*="ticker"], /* Right column / Chat sidebar: news ticker */
+div[id*="pagelet_trending_tags_and_topics"], /* Right column: Trending tags and topics */
+div[class*="_3u16"], /*Post dialog*/
+div[class*="home_right_column"], /*Right Col*/
+div[id*="universalNav"], /*Home nav*/
+div[class*="fbChatSidebar"], /*Chat right sidebar*/
+div[class*="_64b fixed_elem"], /*Footnotes*/
+div[id*="createNav"], /* Right column: Trending tags and topics */
+div[id*="appsNav"] /* Right column: Trending tags and topics */
+{
+  display: none !important;
+}
+
+/* News feed - Needs visibility:hidden to prevent endless refreshing */
+div[id*="topnews"] { 
+	visibility: hidden !important;
+}
+
+/*chat height*/
+div[class*="_2sz2"] {
+	height:700px !important;
+}
+/*chat width*/
+div[class*="fbDockChatTabFlyout"] {
+	width:400px !important;
+}
+/*align chat right*/
+div[class*="fbNubFlyout"] {
+	right:auto !important;
+}
