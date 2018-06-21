@@ -1,4 +1,3 @@
-# stylish
-Chrome extension Stylish styles
+# Various config / automation files and scripts
 
-Facebook style is based on quiet facebook official style (https://userstyles.org/styles/128616/quiet-facebook-official)
+Feel free to use and modify.
