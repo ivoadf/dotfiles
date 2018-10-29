@@ -1,0 +1,54 @@
+general{
+  colors = true
+  interval = 1
+  color_good = "#93fc6a"
+  color_bad = "#fc6a6a"
+  color_degraded = "#fcf06a"
+}
+
+order += "cpu_temperature 0"
+order += "battery 0"
+order += "disk /"
+order += "ethernet enp5s0"
+order += "wireless wlp3s0"
+order += "volume master"
+order += "time"
+
+time {
+	format = "%a %Y-%m-%d %H:%M:%S"
+}
+
+volume master {
+        format = "♪: %volume"
+        format_muted = "♪: muted (%volume)"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+}
+
+wireless wlp3s0{
+  format_up = "📶: %quality %essid %ip"
+  format_down = "📶: down"
+}
+
+ethernet enp5s0{
+  format_up = "E: %ip (%speed)"
+  format_down = "E: down"
+}
+
+disk /{
+  prefix_type = "custom"
+  format = "%free"
+  low_threshold = 10
+  format_below_threshold = "Warning: %free"
+  threshold_type = "gbytes_avail"
+}
+
+battery 0{
+  format = "%status %percentage %remaining %emptytime"
+  low_threshold = 20
+}
+
+cpu_temperature 0{
+  format = "T: %degrees ºC"
+}
