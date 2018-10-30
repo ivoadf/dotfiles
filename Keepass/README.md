@@ -10,3 +10,6 @@ Integrations with chrome:
 [CKP](https://chrome.google.com/webstore/detail/ckp-keepass-integration-f/lnfepbjehgokldcaljagbmchhnaaogpc)
 
 Integration with Android: [KeePassDroid](https://play.google.com/store/apps/details?id=com.android.keepass&hl=en)
+
+Integration with Firefox:
+[KeePass Tusk](https://subdavis.com/Tusk/)
