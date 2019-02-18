@@ -2,9 +2,13 @@
 
 Using rclone: https://rclone.org/drive/
 
-Using KeePass2 App add trigger on application close:
+Using KeePass2 App
 
+Add trigger on application close 
 ``` rclone copy path_to_keypass_db GDrive: ```
+
+Trigger on application start 
+``` rclone copy GDrive:KeePassDB.kdbx path_to_keypass_dir ```
 
 Integrations with chrome:
 [CKP](https://chrome.google.com/webstore/detail/ckp-keepass-integration-f/lnfepbjehgokldcaljagbmchhnaaogpc)
