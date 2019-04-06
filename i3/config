@@ -139,10 +139,10 @@ bindsym $mod+Return exec urxvt
 
 # Print screen
 set $screenshot_file ~/Pictures/Screenshot_$(date +%Y-%m-%d_%H:%M:%S).png
-bindsym Print exec $nsi maim $screenshot_file && xclip -selection clipboard -t image/png -i $screenshot_file && rm $screenshot_file
-bindsym Ctrl+Print exec $nsi maim $screenshot_file
-bindsym Ctrl+Shift+Print exec $nsi maim -s $screenshot_file && xclip -selection clipboard -t image/png -i $screenshot_file && rm $screenshot_file
-bindsym Shift+Print exec $nsi maim -s $screenshot_file
+bindsym Print exec maim --format png /dev/stdout | xclip -selection clipboard -t image/png
+bindsym Ctrl+Print exec maim $screenshot_file
+bindsym Ctrl+Shift+Print exec maim -s --format png /dev/stdout | xclip -selection clipboard -t image/png
+bindsym Shift+Print exec maim -s $screenshot_file
 
 # Audio controls
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 2%+
