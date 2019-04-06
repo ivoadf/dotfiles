@@ -7,8 +7,5 @@
 # load resources
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 
-#Keyboard sensitivity
-xset r rate 200 70
-
 # invoke global X session script
 . /etc/X11/Xsession

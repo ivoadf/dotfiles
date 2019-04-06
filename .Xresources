@@ -1,28 +1,45 @@
 !! Appearance
 urxvt.termName: rxvt-unicode
 urxvt.scrollBar: false
-urxvt.background: black
-urxvt.foreground: gray
 !! Font preferences
 urxvt.font: xft:SourceCodeProForPowerline:pixelsize=13
 !! Larger history limit
 urxvt.saveLines: 1000000
 
-!! Tango color theme
-URxvt.color0: rgb:00/00/00
-URxvt.color1: rgb:CC/00/00
-URxvt.color2: rgb:4E/9A/06
-URxvt.color3: rgb:C4/A0/00
-URxvt.color4: rgb:34/65/A4
-URxvt.color5: rgb:75/50/7B
-URxvt.color6: rgb:06/98/9A
-URxvt.color7: rgb:D3/D7/CF
-URxvt.color8: rgb:55/57/53
-URxvt.color9: rgb:EF/29/29
-URxvt.color10: rgb:8A/E2/34
-URxvt.color11: rgb:FC/E9/4F
-URxvt.color12: rgb:72/9F/CF
-URxvt.color13: rgb:AD/7F/A8
-URxvt.color14: rgb:34/E2/E2
-URxvt.color15: rgb:EE/EE/EC
-URxvt.colorBD: rgb:ff/ff/ff
+! special
+*.foreground:   #c0b18b
+*.background:   #212121
+*.cursorColor:  #f3f9fb
+
+! black
+*.color0:       #1d1919
+*.color8:       #1d1919
+
+! red
+*.color1:       #e16262
+*.color9:       #e16262
+
+! green
+*.color2:       #3a9679
+*.color10:      #3a9679
+
+! yellow
+*.color3:       #ffc15e
+*.color11:      #ffc15e
+
+! blue
+*.color4:       #257aa6
+*.color12:      #257aa6
+
+! magenta
+*.color5:       #621e81
+*.color13:      #621e81
+
+! cyan
+*.color6:       #00dbaa
+*.color14:      #00dbaa
+
+! white
+*.color7:       #eaeaea
+*.color15:      #eaeaea
+
