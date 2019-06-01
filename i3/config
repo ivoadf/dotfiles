@@ -153,6 +153,19 @@ bindsym XF86AudioMute exec amixer -q set Master toggle
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 
 
+# Keyboard layout mode
+set $keyboard_mode Keyboard layout (p) Portuguese, (e) English US
+mode "$keyboard_mode" {
+    bindsym p exec --no-startup-id setxkbmap pt, mode "default"
+    bindsym e exec --no-startup-id setxkbmap us, mode "default"
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+Home mode "$keyboard_mode"
+
 ########################
 #Auto start application#
 ########################
