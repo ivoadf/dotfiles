@@ -42,7 +42,7 @@ bindsym $mod+Shift+Right move right
 #bindsym $mod+h split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+#bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -145,9 +145,13 @@ bindsym Ctrl+Shift+Print exec maim -s --format png /dev/stdout | xclip -selectio
 bindsym Shift+Print exec maim -s $screenshot_file
 
 # Audio controls
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 2%+
-bindsym XF86AudioLowerVolume exec amixer -q set Master 2%-
+set $volumeUp amixer -D pulse -q set Master 2%+
+set $volumeDown amixer -D pulse -q set Master 2%-
+bindsym XF86AudioRaiseVolume exec $volumeUp
+bindsym XF86AudioLowerVolume exec $volumeDown
 bindsym XF86AudioMute exec amixer -q set Master toggle
+bindsym $mod+Ctrl+O exec $volumeDown
+bindsym $mod+Ctrl+P exec $volumeUp
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 
