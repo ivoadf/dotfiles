@@ -14,7 +14,7 @@ div[id*="appsNav"] /* Right column: Trending tags and topics */
 }
 
 /* News feed - Needs visibility:hidden to prevent endless refreshing */
-div[id*="topnews"] { 
+div[id*="topnews"],div[id=fb_stories_card_root] { 
 	visibility: hidden !important;
 }
 
@@ -23,7 +23,7 @@ div[class*="_2sz2"] {
 	height:700px !important;
 }
 /*chat width*/
-div[class*="fbDockChatTabFlyout"] {
+div[class*="fbNub"] {
 	width:400px !important;
 }
 /*align chat right*/
