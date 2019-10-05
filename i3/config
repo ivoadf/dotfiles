@@ -136,6 +136,7 @@ bindsym $mod+Ctrl+L exec $nsi $Locker
 bindsym $mod+Ctrl+A exec keepass2 --auto-type
 bindsym $mod+Shift+V exec $nsi thunar '/home/ivoadf/Entertainment'
 bindsym $mod+Return exec urxvt
+bindsym $mod+Ctrl+Shift+P exec $nsi /opt/piavpn/bin/pia-client
 
 # Print screen
 set $screenshot_file ~/Pictures/Screenshot_$(date +%Y-%m-%d_%H:%M:%S).png
@@ -174,7 +175,7 @@ bindsym $mod+Home mode "$keyboard_mode"
 #Auto start application#
 ########################
 exec $nsi i3-msg 'exec discord'
-exec firefox -url 'facebook.com' -url 'youtube.com/feed/subscriptions' -url 'reddit.com' -url 'gmail.com' -url 'todoist.com'
+exec firefox -url 'facebook.com' -url 'youtube.com/feed/subscriptions' -url 'gmail.com' -url 'todoist.com'
 exec $nsi redshift
 exec $nsi xsetroot -solid '#212121' 
 exec $nsi xset r rate 200 70
