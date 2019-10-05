@@ -131,7 +131,7 @@ bindsym $mod+Pause mode "$mode_system"
 #######################
 set $nsi --no-startup-id
 
-bindsym $mod+d exec $nsi rofi -show run
+bindsym $mod+d exec $nsi rofi -show drun
 bindsym $mod+Ctrl+L exec $nsi $Locker
 bindsym $mod+Ctrl+A exec keepass2 --auto-type
 bindsym $mod+Shift+V exec $nsi thunar '/home/ivoadf/Entertainment'
