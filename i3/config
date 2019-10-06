@@ -171,6 +171,21 @@ mode "$keyboard_mode" {
 
 bindsym $mod+Home mode "$keyboard_mode"
 
+
+# Screen layout mode
+set $screen_layout Screen layout (1) Laptop only, (2) HDMI only, (3) Both
+mode "$screen_layout" {
+    bindsym 1 exec --no-startup-id /home/ivoadf/.screenlayout/laptop_only.sh, mode "default"
+    bindsym 2 exec --no-startup-id /home/ivoadf/.screenlayout/hdmi_only.sh, mode "default"
+    bindsym 3 exec --no-startup-id /home/ivoadf/.screenlayout/both_screens.sh, mode "default"
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+End mode "$screen_layout"
+
 ########################
 #Auto start application#
 ########################
