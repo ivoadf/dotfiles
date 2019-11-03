@@ -11,7 +11,7 @@ Trigger on application start
 ``` rclone copy GDrive:KeePassDB.kdbx path_to_keypass_dir ```
 
 ## Integration with Android
-[KeePassDroid](https://play.google.com/store/apps/details?id=com.android.keepass&hl=en)
+[Keepass2Android Password Safe](https://play.google.com/store/apps/details?id=keepass2android.keepass2android&hl=en_GB)
 
 ## Integration on desktop
 Use keepass auto-type functionallity.
