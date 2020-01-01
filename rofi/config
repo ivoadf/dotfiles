@@ -1,4 +1,0 @@
-configuration {
-	modi: "window,run,ssh,drun";
-}
-rofi.theme: /usr/share/rofi/themes/Arc-Dark.rasi
