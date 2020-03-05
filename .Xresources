@@ -67,6 +67,13 @@ URxvt.boldItalicFont:           xft:Source Code Pro:autohint=true:bold:italic:si
 ! URxvt.bold.font: -xos4-terminus-bold-r-normal--16-160-72-72-c-80-iso10646-1
 !! terminus names see end of file!
 
+! tab support for urxvt
+! clickable urls
+URxvt.perl-ext-common: ...,default,matcher,tabbed,...
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+URxvt.matcher.rend.0: Uline Bold fg5
+
 URxvt.depth:                      32
 URxvt.background:                 [100]#222D31
 URxvt*scrollBar:                  false
