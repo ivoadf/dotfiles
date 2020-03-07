@@ -1,0 +1,65 @@
+[
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1577903154700,
+		"name": "www.facebook.com",
+		"sections": [
+			{
+				"code": "#pagelet_bookmark_nav, /* Left column: Bookmarks */\na[href*=\"lists\"], /* Left column: Lists like 'Close Friends' */\ndiv[id*=\"ticker\"], /* Right column / Chat sidebar: news ticker */\ndiv[id*=\"pagelet_trending_tags_and_topics\"], /* Right column: Trending tags and topics */\ndiv[class*=\"_3u16\"], /*Post dialog*/\ndiv[class*=\"home_right_column\"], /*Right Col*/\ndiv[id*=\"universalNav\"], /*Home nav*/\ndiv[class*=\"fbChatSidebar\"], /*Chat right sidebar*/\ndiv[class*=\"_64b fixed_elem\"], /*Footnotes*/\ndiv[id*=\"createNav\"], /* Right column: Trending tags and topics */\ndiv[id*=\"appsNav\"] /* Right column: Trending tags and topics */\n{\n  display: none !important;\n}\n\n/* News feed - Needs visibility:hidden to prevent endless refreshing */\ndiv[id*=\"topnews\"],div[id=fb_stories_card_root] { \n\tvisibility: hidden !important;\n}\n\n/*chat height*/\ndiv[class*=\"_2sz2\"] {\n\theight:700px !important;\n}\n/*chat width*/\ndiv[class*=\"fbNub\"] {\n\twidth:400px !important;\n}\n/*align chat right*/\ndiv[class*=\"fbNubFlyout\"] {\n\tright:auto !important;\n}",
+				"urlPrefixes": [
+					"https://www.facebook.com/"
+				]
+			}
+		],
+		"updateDate": 1577903154700,
+		"id": 2,
+		"_id": "b6db0acf-91f5-4cf0-9c21-4cac16d7828d",
+		"_rev": 1583266655937
+	},
+	{
+		"enabled": false,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1581242420559,
+		"name": "youtube.com",
+		"sections": [
+			{
+				"code": "#secondary{\n    display: none;\n}",
+				"domains": [
+					"youtube.com"
+				]
+			}
+		],
+		"updateDate": 1581242420559,
+		"id": 3,
+		"_id": "ecd4966b-2e7e-4d8e-a7b5-86d854a61d71",
+		"_rev": 1583266655937
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1582992008507,
+		"name": "linkedin.com",
+		"sections": [
+			{
+				"code": ".feed-shared-update-v2{\n    display: none;\n}",
+				"domains": [
+					"linkedin.com"
+				]
+			}
+		],
+		"updateDate": 1583588629515,
+		"id": 4,
+		"_id": "edda9eaa-539f-471a-913b-d62a433485e3",
+		"_rev": 1583588633123
+	}
+]
