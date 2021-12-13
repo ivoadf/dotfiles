@@ -7,7 +7,7 @@ Inspired by the [Synchronizing with Dropbox](https://keepass.info/help/kb/trigge
 ## Dependencies
 
 - [rclone](https://rclone.org/drive/)
-- [KeePass2](chttps://keepass.info/help/v2/setup.html)
+- [KeePass2](https://keepass.info/help/v2/setup.html)
 
 ## Setup
 
