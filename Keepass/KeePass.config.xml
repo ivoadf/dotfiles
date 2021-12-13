@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Meta>
+		<PreferUserConfiguration>false</PreferUserConfiguration>
+		<OmitItemsWithDefaultValues>true</OmitItemsWithDefaultValues>
+		<DpiFactorX>1</DpiFactorX>
+		<DpiFactorY>1</DpiFactorY>
+	</Meta>
+	<Application>
+		<LastUsedFile>
+			<Path>../../../home/ivoadf/Documents/LOCAL_KeePassDB.kdbx</Path>
+			<CredProtMode>Obf</CredProtMode>
+			<CredSaveMode>NoSave</CredSaveMode>
+		</LastUsedFile>
+		<MostRecentlyUsed>
+			<MaxItemCount>12</MaxItemCount>
+			<Items>
+				<ConnectionInfo>
+					<Path>../../../home/ivoadf/Documents/LOCAL_KeePassDB.kdbx</Path>
+					<CredProtMode>Obf</CredProtMode>
+					<CredSaveMode>NoSave</CredSaveMode>
+				</ConnectionInfo>
+			</Items>
+		</MostRecentlyUsed>
+		<WorkingDirectories>
+			<Item>Database@../../../home/ivoadf/Documents</Item>
+			<Item>Attachments@../../../home/ivoadf/Downloads</Item>
+		</WorkingDirectories>
+		<Start>
+			<CheckForUpdate>false</CheckForUpdate>
+			<CheckForUpdateConfigured>true</CheckForUpdateConfigured>
+		</Start>
+		<FileOpening />
+		<FileClosing />
+		<TriggerSystem>
+			<Triggers>
+				<Trigger>
+					<Guid>e0VGSeY/EkKsPuvc5lkxDQ==</Guid>
+					<Name>Sync on save</Name>
+					<Events>
+						<Event>
+							<TypeGuid>s6j9/ngTSmqcXdW6hDqbjg==</TypeGuid>
+							<Parameters>
+								<Parameter>0</Parameter>
+								<Parameter />
+							</Parameters>
+						</Event>
+					</Events>
+					<Conditions />
+					<Actions>
+						<Action>
+							<TypeGuid>tkamn96US7mbrjykfswQ6g==</TypeGuid>
+							<Parameters>
+								<Parameter />
+								<Parameter>0</Parameter>
+							</Parameters>
+						</Action>
+						<Action>
+							<TypeGuid>2uX4OwcwTBOe7y66y27kxw==</TypeGuid>
+							<Parameters>
+								<Parameter>rclone</Parameter>
+								<Parameter>copy GDrive:KeePassDB.kdbx /home/ivoadf/Documents/</Parameter>
+								<Parameter>True</Parameter>
+								<Parameter>0</Parameter>
+								<Parameter />
+							</Parameters>
+						</Action>
+						<Action>
+							<TypeGuid>Iq135Bd4Tu2ZtFcdArOtTQ==</TypeGuid>
+							<Parameters>
+								<Parameter>/home/ivoadf/Documents/KeePassDB.kdbx</Parameter>
+								<Parameter />
+								<Parameter />
+							</Parameters>
+						</Action>
+						<Action>
+							<TypeGuid>2uX4OwcwTBOe7y66y27kxw==</TypeGuid>
+							<Parameters>
+								<Parameter>rclone</Parameter>
+								<Parameter>copy /home/ivoadf/Documents/KeePassDB.kdbx GDrive:</Parameter>
+								<Parameter>True</Parameter>
+								<Parameter>0</Parameter>
+								<Parameter />
+							</Parameters>
+						</Action>
+						<Action>
+							<TypeGuid>tkamn96US7mbrjykfswQ6g==</TypeGuid>
+							<Parameters>
+								<Parameter />
+								<Parameter>1</Parameter>
+							</Parameters>
+						</Action>
+					</Actions>
+				</Trigger>
+			</Triggers>
+		</TriggerSystem>
+		<PluginCompatibility />
+	</Application>
+	<Logging />
+	<MainWindow>
+		<X>0</X>
+		<Y>0</Y>
+		<Width>2568</Width>
+		<Height>1443</Height>
+		<SplitterHorizontalFrac>0.8333</SplitterHorizontalFrac>
+		<SplitterVerticalFrac>0.25</SplitterVerticalFrac>
+		<ToolBar />
+		<EntryView />
+		<TanView />
+		<EntryListColumnCollection>
+			<Column>
+				<Type>Title</Type>
+				<Width>235</Width>
+			</Column>
+			<Column>
+				<Type>UserName</Type>
+				<Width>138</Width>
+			</Column>
+			<Column>
+				<Type>Password</Type>
+				<Width>138</Width>
+				<HideWithAsterisks>true</HideWithAsterisks>
+			</Column>
+			<Column>
+				<Type>Url</Type>
+				<Width>138</Width>
+			</Column>
+			<Column>
+				<Type>Notes</Type>
+				<Width>138</Width>
+			</Column>
+			<Column>
+				<Type>CreationTime</Type>
+				<Width>-1</Width>
+			</Column>
+			<Column>
+				<Type>LastModificationTime</Type>
+				<Width>-1</Width>
+			</Column>
+		</EntryListColumnCollection>
+		<EntryListColumnDisplayOrder>0 1 2 3 4 5 6</EntryListColumnDisplayOrder>
+		<ListSorting>
+			<Order>Ascending</Order>
+		</ListSorting>
+	</MainWindow>
+	<UI>
+		<TrayIcon />
+		<Hiding />
+		<StandardFont>
+			<Family>Microsoft Sans Serif</Family>
+			<Size>8.25</Size>
+			<GraphicsUnit>Point</GraphicsUnit>
+			<Style>Regular</Style>
+			<OverrideUIDefault>false</OverrideUIDefault>
+		</StandardFont>
+		<PasswordFont>
+			<Family>Courier New</Family>
+			<Size>8.25</Size>
+			<GraphicsUnit>Point</GraphicsUnit>
+			<Style>Regular</Style>
+			<OverrideUIDefault>false</OverrideUIDefault>
+		</PasswordFont>
+		<BannerStyle>WinVistaBlack</BannerStyle>
+		<DataEditorFont>
+			<Family>Microsoft Sans Serif</Family>
+			<Size>8.25</Size>
+			<GraphicsUnit>Point</GraphicsUnit>
+			<Style>Regular</Style>
+			<OverrideUIDefault>false</OverrideUIDefault>
+		</DataEditorFont>
+		<AutoTypeCtxRect>892 441 781 559</AutoTypeCtxRect>
+		<UIFlags>0</UIFlags>
+		<KeyCreationFlags>0</KeyCreationFlags>
+		<KeyPromptFlags>0</KeyPromptFlags>
+	</UI>
+	<Security>
+		<WorkspaceLocking>
+			<LockAfterTime>0</LockAfterTime>
+			<LockAfterGlobalTime>0</LockAfterGlobalTime>
+		</WorkspaceLocking>
+		<Policy />
+		<MasterPassword>
+			<MinimumLength>0</MinimumLength>
+			<MinimumQuality>0</MinimumQuality>
+		</MasterPassword>
+	</Security>
+	<Native />
+	<PasswordGenerator>
+		<AutoGeneratedPasswordsProfile>
+			<GeneratorType>CharSet</GeneratorType>
+			<Length>20</Length>
+			<CharSetRanges>ULD_______</CharSetRanges>
+		</AutoGeneratedPasswordsProfile>
+		<LastUsedProfile>
+			<Name>(Custom)</Name>
+			<GeneratorType>CharSet</GeneratorType>
+			<Length>20</Length>
+			<CharSetRanges>ULD_______</CharSetRanges>
+		</LastUsedProfile>
+		<UserProfiles>
+			<Profile>
+				<Name>Len 20 - Number, upper, lower, symbols</Name>
+				<GeneratorType>CharSet</GeneratorType>
+				<Length>20</Length>
+				<CharSetRanges>ULDS_mu___</CharSetRanges>
+			</Profile>
+		</UserProfiles>
+	</PasswordGenerator>
+	<Search>
+		<LastUsedProfile>
+			<Name>(Custom)</Name>
+			<SearchMode>Simple</SearchMode>
+			<ComparisonMode>InvariantCultureIgnoreCase</ComparisonMode>
+		</LastUsedProfile>
+		<UserProfiles />
+	</Search>
+	<Defaults>
+		<OptionsTabIndex>4</OptionsTabIndex>
+		<KeySources>
+			<Association>
+				<DatabasePath>../../../home/ivoadf/Documents/LOCAL_KeePassDB.kdbx</DatabasePath>
+				<Password>true</Password>
+			</Association>
+		</KeySources>
+	</Defaults>
+	<Integration>
+		<HotKeyGlobalAutoType>0</HotKeyGlobalAutoType>
+		<HotKeyGlobalAutoTypePassword>0</HotKeyGlobalAutoTypePassword>
+		<HotKeyShowWindow>0</HotKeyShowWindow>
+		<UrlSchemeOverrides>
+			<BuiltInOverridesEnabled>1</BuiltInOverridesEnabled>
+			<CustomOverrides />
+		</UrlSchemeOverrides>
+		<AutoTypeMatchByUrlInTitle>true</AutoTypeMatchByUrlInTitle>
+		<AutoTypeAbortOnWindows />
+	</Integration>
+	<Custom />
+</Configuration>
