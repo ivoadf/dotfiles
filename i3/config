@@ -225,6 +225,18 @@ mode "$keyboard_mode" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
+# xbindkey selection mode
+set $xbindkey_mode Xkeybind config (1) No op, (2) Tibia 
+bindsym $mod+Pause mode "$xbindkey_mode"
+mode "$xbindkey_mode" {
+    bindsym 1 exec --no-startup-id "killall xbindkeys; xbindkeys -f /home/ivoadf/.xbindkeysrc", mode "default" 
+    bindsym 2 exec --no-startup-id "killall xbindkeys; xbindkeys -f /home/ivoadf/.xbindkeysrc_tibia", mode "default" 
+
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
 
 # Screen layout mode
 set $screen_layout Screen layout (1) Laptop only, (2) HDMI only, (3) Both
@@ -284,9 +296,10 @@ mode "resize" {
 bindsym $mod+Ctrl+L exec --no-startup-id blurlock
 
 # Autostart applications
-exec --no-startup-id i3-msg 'exec discord'
+#exec --no-startup-id i3-msg 'exec discord'
 exec firefox 
 exec --no-startup-id redshift
+exec --no-startup-id safeeyes
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 #exec --no-startup-id manjaro-hello
@@ -296,12 +309,12 @@ exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
-exec --no-startup-id xautolock -time 10 -locker blurlock
+# exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
 # Keyboard delay and repeat rate
-exec --no-startup-id xset r rate 185 50
+exec --no-startup-id xset r rate 200 30
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
